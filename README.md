@@ -1,18 +1,28 @@
 # Project.LightsUP
 ## demo project for STM32F1XX-based Sounder &amp; WS2812B RGB LED
 
+
 for this project, i use `STM32F103C8T6` as the controller, 
+
 then one `Sounder`, connected to `GPIO_B_0` under `output mode`
+
 and one `WS2812B`, connected to `GPIO_B_1` under `PWM output mode`
 
+
 i put functions for controlling the two circuits into two header files respectively,
+
 which are `Sounder.h` and `neoPixel.h`
 
+
 ### Quick Start
+
 to simply test this demo code, you may use STM32CubeMX to setup a Keil project based on `Project.LightsUP.ioc`, then replace `main.c` with provided one
+
 also remember to include my custom headers in Keil Configurations   ::)
 
-here's the brief usage information
+### Basic Usage
+
+here's a brief usage
 
 ```
 Sounder.h
